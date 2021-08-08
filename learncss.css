@@ -1,0 +1,172 @@
+*{
+    
+    padding-top: 5px;
+
+    /* its the universal selector and applies border to all the elements*/
+}
+
+img {
+    width :300px;
+    height: 250px;
+}
+/*This is a comment*/
+body {
+background-color: rgba(21, 226, 226, 0.842)
+/*rgb represesntation. for more color codes visit site:https://colours.neilorangepeel.com/ .*/
+}
+h3 {
+    color: #0000FF;
+    /*hexa decimel representation*/
+}
+.exampleclass
+{
+font-size: 50px;
+/*class selector is defined with a . operator and invoke using "class="class-name"" in the element.
+ it can be used anywhere and anytime in the document.*/
+}
+#exampleid
+{
+    background: rgb(25, 180, 228);
+    /*id selector defined with a # operator and invoke using :id="id name"".*/
+}
+a { 
+color:rgba(5, 90, 5, 0.911);
+font-size: 25px;
+}
+/*for the elements nested inside an element like "section->paragraph->link" or "ul->li->link" we can give 
+seperate styles like below.*/
+section a
+{
+    color:indigo;
+    /*aplies to links inside the section*/
+}
+section p a
+{
+    color:maroon;
+    /*applies to links inside paragraph inside section*/
+}
+.container p 
+{
+    font-style: italic;
+}
+/*grouping of selectors*/
+h1,h2,h3
+{
+    font-style: oblique;
+    /*group elements and give the attribute that shares by all*/
+}
+section h1,section h2{
+    background: orangered;
+    /*section h1,h2 applies to h1 inside section and all h2*/
+}
+
+
+/*note: the order of priority id>class>type>universal. 
+That means if an element is addressed by twp or more selectors
+then it will overrite in the order give above*/
+h3{
+    color:red;
+}
+.class1
+{
+    color: blue;
+}
+#class1
+{
+    color:brown
+    /*here element is ovrrided with all the above */
+}
+/*---------------------------------------------------------------------------------------------------*/
+.work h2
+{
+color:crimson;
+font-style:inherit;
+background: none;
+font-size: 40px;
+}
+.work p{
+    font-size: 30px;
+}
+.job h3
+{
+color:crimson;
+font-style:inherit;
+background: none;
+font-size: 40px;
+}
+.job p{
+    font-size: 30px;
+}
+.list li
+{
+    font-size: 20px;
+    color:tomato;
+}
+.education h2
+{
+color:crimson;
+font-style:inherit;
+background: none;
+font-size: 40px;
+
+}
+.education h3
+{
+color:crimson;
+font-style:inherit;
+background: none;
+font-size: 40px;
+
+}
+.education p{
+    font-size: 30px;
+}
+.project a
+{
+    color:rgb(0,0,128);
+}
+.project .btn{
+    background: rgb(0,0,128);
+    color: rgb(255,245,238);
+    text-decoration: none;
+    padding:9px;
+    border-radius: 5px;
+}
+.project .btn:hover
+{
+    background: rgba(0, 0, 128, 80%); 
+}
+div{
+    background: royalblue;
+    height: 100px;
+    width: 250px;
+    /*display: inline;
+    convert block to inline*/
+    
+}
+span
+{
+    background: salmon;
+    height: 100px;
+    width:250px;
+    /*it doesn't make any change in height and width*/
+    /*display: block;
+    this will convert inline to block*/
+}
+.boxmodel h3,h4
+{
+    padding: 50px;
+    background: sandybrown;
+        border: 50px solid red;
+        margin: 200px;
+        font-size: 100px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 800;
+        
+
+}
+.font-google
+{
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
